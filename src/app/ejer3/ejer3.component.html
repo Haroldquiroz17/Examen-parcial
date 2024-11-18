@@ -1,0 +1,14 @@
+<div class="container">
+    <h1>Cálculo de Matricula Escolar</h1>
+  
+    <label for="numeroMaterias">Número de Materias:</label>
+    <input type="number" id="numeroMaterias" [(ngModel)]="numeroMaterias" placeholder="Ingresa el número de materias">
+  
+    <button (click)="calcularMatricula()">Calcular Matricula</button>
+  
+    <div *ngIf="costoTotal !== null">
+      <h2>Resultado:</h2>
+      <p>El costo total de la matricula es: <strong>{{ costoTotal | currency: 'S/':'symbol' }}</strong></p>
+    </div>
+  </div>
+  

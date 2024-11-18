@@ -1,0 +1,23 @@
+<div class="container">
+    <h1>Cálculo del Mayor Número</h1>
+    
+    <label for="numero1">Número 1:</label>
+    <input type="number" id="numero1" [(ngModel)]="numero1" placeholder="Ingresa el primer número">
+  
+    <label for="numero2">Número 2:</label>
+    <input type="number" id="numero2" [(ngModel)]="numero2" placeholder="Ingresa el segundo número">
+  
+    <label for="numero3">Número 3:</label>
+    <input type="number" id="numero3" [(ngModel)]="numero3" placeholder="Ingresa el tercer número">
+  
+    <label for="numero4">Número 4:</label>
+    <input type="number" id="numero4" [(ngModel)]="numero4" placeholder="Ingresa el cuarto número">
+  
+    <button (click)="calcularMayor()">Calcular Mayor</button>
+  
+    <div *ngIf="mayor !== null">
+      <h2>Resultado:</h2>
+      <p>El número mayor es: <strong>{{ mayor }}</strong></p>
+    </div>
+  </div>
+  
